@@ -189,10 +189,7 @@ ignoreMissingFields:(BOOL)ignoreMissingFields
     
     if (mapping.valueBlock) {
         id value = [representation valueForKeyPath:mapping.keyPath];
-        if (value != nil) {
-            return mapping.valueBlock(mapping.keyPath, value);
-        }
-        return value;
+        return mapping.valueBlock(mapping.keyPath, value);
     }
     else {
         return [representation valueForKeyPath:mapping.keyPath];
