@@ -51,8 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
  respectPropertyType:(BOOL)respectPropertyType
  ignoreMissingFields:(BOOL)ignoreMissingFields;
 
-+ (nullable id)getValueOfProperty:(EKPropertyMapping *)propertyMapping
-               fromRepresentation:(NSDictionary *)representation;
++ (nullable id)getValueOfProperty:(EKPropertyMapping *)mapping fromRepresentation:(NSDictionary *)representation ignoreMissingFields:(BOOL)ignoreMissingFields;
 
 + (nullable id)getValueOfManagedProperty:(EKPropertyMapping *)mapping
                       fromRepresentation:(NSDictionary *)representation
